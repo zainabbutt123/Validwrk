@@ -1,0 +1,330 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#050505">
+  <title>Contact Us | VALIDWRK</title>
+
+  <!-- Bootstrap 5.3.2 -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Contact CSS -->
+  <link rel="stylesheet" href="contact.css">
+</head>
+
+<body id="top">
+
+  <!-- Header / Navigation -->
+  <header class="header">
+    <div class="container nav">
+
+      <a href="index.html" class="brand" aria-label="VALIDWRK home">
+        <img
+          src="Validwrk%20Logo.png"
+          class="brand-logo"
+          alt="VALIDWRK Logo">
+      </a>
+
+      <button
+        class="menu-toggle"
+        id="menuToggle"
+        aria-label="Open navigation"
+        aria-expanded="false"
+        aria-controls="navLinks"
+        type="button">☰</button>
+
+      <nav class="nav-links" id="navLinks" aria-label="Main navigation">
+        <a href="index.html">Home</a>
+        <a href="services.html">Services</a>
+        <a href="about.html">About</a>
+        <a href="blog.html">Blog</a>
+        <a href="contact.html" aria-current="page">Contact</a>
+        <a href="packages.html" class="nav-cta">View Packages</a>
+      </nav>
+
+    </div>
+  </header>
+
+  <!-- Main Contact Section -->
+  <main class="contact-main">
+
+    <section class="contact-intro">
+      <div class="intro-label">
+        <span class="label-line"></span>
+        CONTACT US
+      </div>
+
+      <h1>Let's Work <span>Together.</span></h1>
+
+      <p class="intro-text">
+        Tell us about your providers and payers. We will outline
+        the next steps and a realistic timeline.
+      </p>
+    </section>
+
+    <section class="contact-layout">
+
+      <!-- Inquiry Form -->
+      <div class="form-card">
+        <div class="card-top">
+          <div>
+            <p class="section-kicker">GET IN TOUCH</p>
+            <h2>Send an Inquiry</h2>
+          </div>
+          <div class="form-number">01</div>
+        </div>
+
+        <div class="topic" id="topicChip">
+          <span class="topic-dot"></span>
+          <span id="topicText">Topic: Credentialing Backlog Support</span>
+          <button type="button" id="clearTopic" aria-label="Clear topic">×</button>
+        </div>
+
+        <form id="inquiryForm">
+
+          <div class="row g-3">
+            <div class="col-12">
+              <div class="field">
+                <label for="fullName">Full Name <span>*</span></label>
+                <input
+                  id="fullName"
+                  name="fullName"
+                  type="text"
+                  placeholder="Your full name"
+                  autocomplete="name"
+                  required>
+              </div>
+            </div>
+
+            <div class="col-12">
+              <div class="field">
+                <label for="email">Email Address <span>*</span></label>
+                <input
+                  id="email"
+                  name="email"
+                  type="email"
+                  placeholder="you@practice.com"
+                  autocomplete="email"
+                  required>
+              </div>
+            </div>
+
+            <div class="col-md-6">
+              <div class="field">
+                <label for="phone">Phone Number <small>(optional)</small></label>
+                <input
+                  id="phone"
+                  name="phone"
+                  type="tel"
+                  placeholder="(555) 123-4567"
+                  autocomplete="tel">
+              </div>
+            </div>
+
+            <div class="col-md-6">
+              <div class="field">
+                <label for="providerType">Who is this for? <small>(optional)</small></label>
+                <select id="providerType" name="providerType">
+                  <option value="">Select an option</option>
+                  <option>Individual provider</option>
+                  <option>Group practice</option>
+                  <option>Healthcare organization</option>
+                  <option>Other</option>
+                </select>
+              </div>
+            </div>
+
+            <div class="col-12">
+              <div class="field">
+                <label for="message">Message <span>*</span></label>
+                <textarea
+                  id="message"
+                  name="message"
+                  placeholder="Tell us about your providers, payers, and the support you need."
+                  required></textarea>
+              </div>
+            </div>
+          </div>
+
+          <p class="privacy-note">
+            Please do not include patient information, credential documents,
+            account passwords, or other sensitive records.
+          </p>
+
+          <button class="submit-btn" type="submit">
+            Send Inquiry <span aria-hidden="true">→</span>
+          </button>
+
+          <p class="required-note">
+            * Required fields. No payment is collected.
+          </p>
+
+          <p id="formMessage" class="form-message" role="status" aria-live="polite"></p>
+
+        </form>
+      </div>
+
+      <!-- Contact Information -->
+      <aside class="info-card">
+
+        <div class="info-card-top">
+          <p class="section-kicker">WE'RE HERE TO HELP</p>
+          <h2>Contact Information</h2>
+          <p class="info-intro">
+            Have questions or need support? Reach out to us through any of the contact details below.
+          </p>
+        </div>
+
+        <div class="info-line">
+          <div class="info-icon" aria-hidden="true">✉</div>
+          <div class="info-content">
+            <p class="info-label">Email</p>
+            <a class="info-value" href="mailto:info@validwrk.com">info@validwrk.com</a>
+          </div>
+        </div>
+
+        <div class="info-line">
+          <div class="info-icon" aria-hidden="true">☎</div>
+          <div class="info-content">
+            <p class="info-label">Phone</p>
+            <a class="info-value" href="tel:+13468002339">(346) 800-2339</a>
+          </div>
+        </div>
+
+        <div class="info-line">
+          <div class="info-icon" aria-hidden="true">⌖</div>
+          <div class="info-content">
+            <p class="info-label">Location</p>
+            <p class="info-value">Houston, TX</p>
+          </div>
+        </div>
+
+        <div class="info-line">
+          <div class="info-icon" aria-hidden="true">◷</div>
+          <div class="info-content">
+            <p class="info-label">Business hours</p>
+            <p class="info-value">
+              Monday to Friday<br>
+              8:00 AM – 6:00 PM CST
+            </p>
+          </div>
+        </div>
+
+        <div class="info-divider"></div>
+
+        <div class="contact-note">
+          <span class="note-mark">“</span>
+          <p>Good work starts with a conversation.</p>
+        </div>
+
+      </aside>
+
+    </section>
+
+    <div class="back-home">
+      <a href="index.html" class="back-btn">
+        <span aria-hidden="true">←</span> Back to home
+      </a>
+    </div>
+
+  </main>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="container">
+
+      <div class="footer-grid">
+
+        <div class="footer-about">
+          <a href="index.html" aria-label="VALIDWRK home">
+            <img
+              src="Validwrk%20Logo.png"
+              class="footer-logo"
+              alt="VALIDWRK Logo">
+          </a>
+          <p>Provider Credentialing &amp; Enrollment</p>
+        </div>
+
+        <div class="footer-column">
+          <h3>Explore</h3>
+          <a href="index.html">Home</a>
+          <a href="services.html">Services</a>
+          <a href="about.html">About</a>
+          <a href="blog.html">Blog</a>
+        </div>
+
+        <div class="footer-column">
+          <h3>Get Started</h3>
+          <a href="packages.html">View Packages</a>
+          <a href="contact.html">Contact</a>
+        </div>
+
+        <div class="footer-column">
+          <h3>Our Focus</h3>
+          <p>Credentialing</p>
+          <p>CAQH &amp; NPI</p>
+          <p>Payer Enrollment</p>
+        </div>
+
+      </div>
+
+      <div class="footer-bottom">
+        <p>© <span id="year"></span> VALIDWRK</p>
+        <a href="#top">Back to top ↑</a>
+      </div>
+
+    </div>
+  </footer>
+
+  <!-- Bootstrap JavaScript -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+  <!-- Page JavaScript -->
+  <script>
+    // Mobile navigation
+    const menuToggle = document.getElementById("menuToggle");
+    const navLinks = document.getElementById("navLinks");
+
+    menuToggle.addEventListener("click", () => {
+      const isOpen = navLinks.classList.toggle("open");
+
+      menuToggle.setAttribute("aria-expanded", String(isOpen));
+      menuToggle.setAttribute(
+        "aria-label",
+        isOpen ? "Close navigation" : "Open navigation"
+      );
+
+      menuToggle.textContent = isOpen ? "×" : "☰";
+    });
+
+    // Close mobile menu after clicking a navigation link
+    document.querySelectorAll("#navLinks a").forEach(link => {
+      link.addEventListener("click", () => {
+        navLinks.classList.remove("open");
+        menuToggle.setAttribute("aria-expanded", "false");
+        menuToggle.setAttribute("aria-label", "Open navigation");
+        menuToggle.textContent = "☰";
+      });
+    });
+
+    // Clear topic chip
+    document.getElementById("clearTopic").addEventListener("click", () => {
+      document.getElementById("topicChip").style.display = "none";
+    });
+
+    // Inquiry form message
+    document.getElementById("inquiryForm").addEventListener("submit", event => {
+      event.preventDefault();
+
+      document.getElementById("formMessage").textContent =
+        "The form is ready, but a submission service must be connected before inquiries can be sent.";
+    });
+
+    // Automatic copyright year
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
+
+</body>
+</html>
